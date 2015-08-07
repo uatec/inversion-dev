@@ -24,5 +24,8 @@
 		/// </summary>
 		/// <param name="key">The key of the cookie to remove.</param>
 		void Delete(string key);
-	}
+
+	    void Append(string key, string[] values, CookieOptions options);
+        void Append(string key, string[] values);
+    }
 }

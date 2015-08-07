@@ -33,7 +33,17 @@ namespace Inversion.Web.Owin {
 			return false;
 		}
 
-		public IEnumerator<KeyValuePair<string, string>> GetEnumerator() {
+	    public IDictionary<string, string> GetValues(string key)
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public bool TryGetValues(string key, out IDictionary<string, string> values)
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    public IEnumerator<KeyValuePair<string, string>> GetEnumerator() {
 			return _cookies.GetEnumerator();
 		}
 

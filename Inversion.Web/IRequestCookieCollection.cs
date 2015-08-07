@@ -24,5 +24,8 @@ namespace Inversion.Web {
 		/// <param name="value">The string reference any found cookie value should be assigned to.</param>
 		/// <returns>Returns true if the specified cookie was found; otherwise, returns false.</returns>
 		bool TryGetValue(string key, out string value);
+
+	    IDictionary<string, string> GetValues(string key);
+	    bool TryGetValues(string key, out IDictionary<string, string> values);
 	}
 }
